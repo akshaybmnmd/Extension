@@ -2,18 +2,13 @@ body {
   width: 450px;
   height: 300px;
   white-space: nowrap;
-  /*text-align: center;*/
   background-color: white;
-  /*background-color: #d6d6c240;*/
-  /*  background-color: #d6d6c2;*/
 }
 #container {
-  margin: 0px auto;
   width: 230px;
   height: 230px;
-  border: 10px #333 solid;
 }
-#videoElement {
+.video {
   width: 230px;
   height: 230px;
   background-color: #666;

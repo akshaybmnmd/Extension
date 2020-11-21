@@ -12,13 +12,13 @@
     }
   ],
   "browser_action": {
-    "default_icon": "logomash128.png",
+    "default_icon": "images/logo.png",
     "default_popup": "popup.html"
   },
   "description": "This tool enables you to make Online Video calls",
   "icons": {
-    "128": "logomash128.png",
-    "48": "logomash128.png"
+    "128": "images/logo.png",
+    "48": "images/logo.png"
   },
   "manifest_version": 2,
   "name": "Quick Chat",
