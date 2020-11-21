@@ -1,0 +1,43 @@
+{
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["js/jquery.min.js", "js/content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "browser_action": {
+    "default_icon": "logomash128.png",
+    "default_popup": "popup.html"
+  },
+  "description": "This tool enables you to make Online Video calls",
+  "icons": {
+    "128": "logomash128.png",
+    "48": "logomash128.png"
+  },
+  "manifest_version": 2,
+  "name": "Quick Chat",
+  "permissions": [
+    "identity",
+    "identity.email",
+    "activeTab",
+    "tabs",
+    "https://www.googleapis.com/",
+    "storage",
+    "http://*/",
+    "https://*/",
+    "videoCapture",
+    "audioCapture"
+  ],
+  "version": "0.0.1",
+  "web_accessible_resources": ["*.png", "*.jpg", "open_modal.html", "*.gif"],
+  "oauth2": {
+    "client_id": "446510891009-3ufm7fpd53t1jclus70g9v341tqkht5f.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/chromewebstore.readonly"]
+  }
+}
